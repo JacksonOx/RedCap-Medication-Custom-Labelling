@@ -1,0 +1,55 @@
+<style>.misc-start .start-blank,.misc-stop .stop-blank,.mm-med .specific{display:none}
+.misc-start[data-start=""] .start-blank,.misc-stop[data-stop=""] .stop-blank{display:inline}
+.misc-start[data-start=""] .start-date,.misc-stop[data-stop=""] .stop-date{display:none}
+.misc-disc[data-answer="No"]{color:#FFB000!important}
+.misc-disc[data-answer="Yes"]{color:#000000!important}
+.mm-med[data-parent="909"][data-contratype="1"]:not([data-pill=""]) .generic{display:none}
+.mm-med[data-parent="909"][data-contratype="1"]:not([data-pill=""]) .pill{display:inline}
+.mm-med[data-parent="909"][data-contratype="2"]:not([data-long=""]) .generic{display:none}
+.mm-med[data-parent="909"][data-contratype="2"]:not([data-long=""]) .long{display:inline}
+.mm-med[data-parent="909"][data-contratype="1"][data-pill=""] .generic{display:none}
+.mm-med[data-parent="909"][data-contratype="1"][data-pill=""] .contra{display:inline}
+.mm-med[data-parent="909"][data-contratype="2"][data-long=""] .generic{display:none}
+.mm-med[data-parent="909"][data-contratype="2"][data-long=""] .contra{display:inline}
+.mm-med[data-parent="910"]:not([data-acne=""]) .generic{display:none}
+.mm-med[data-parent="910"]:not([data-acne=""]) .acne{display:inline}
+.mm-med[data-parent="911"]:not([data-migraine=""]) .generic{display:none}
+.mm-med[data-parent="911"]:not([data-migraine=""]) .migraine{display:inline}
+.mm-med[data-parent="912"]:not([data-antihis=""]) .generic{display:none}
+.mm-med[data-parent="912"]:not([data-antihis=""]) .antihis{display:inline}
+.mm-med[data-parent="913"]:not([data-fungal=""]) .generic{display:none}
+.mm-med[data-parent="913"]:not([data-fungal=""]) .fungal{display:inline}
+.mm-med[data-parent="914"]:not([data-antiviral=""]) .generic{display:none}
+.mm-med[data-parent="914"]:not([data-antiviral=""]) .antiviral{display:inline}
+.mm-med[data-parent="915"]:not([data-gastric=""]) .generic{display:none}
+.mm-med[data-parent="915"]:not([data-gastric=""]) .gastric{display:inline}
+.mm-med[data-parent="916"]:not([data-thyroid=""]) .generic{display:none}
+.mm-med[data-parent="916"]:not([data-thyroid=""]) .thyroid{display:inline}
+.mm-med[data-parent="917"]:not([data-controlled=""]) .generic{display:none}
+.mm-med[data-parent="917"]:not([data-controlled=""]) .controlled{display:inline}
+.mm-med[data-parent="918"]:not([data-supplement=""]) .generic{display:none}
+.mm-med[data-parent="918"]:not([data-supplement=""]) .supplement{display:inline}
+.mm-med[data-parent="919"]:not([data-metabolic=""]) .generic{display:none}
+.mm-med[data-parent="919"]:not([data-metabolic=""]) .metabolic{display:inline}
+.mm-med[data-parent="99"]:not([data-other=""]) .generic{display:none}
+.mm-med[data-parent="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="909"][data-long="99"]:not([data-other=""]) .long{display:none}
+.mm-med[data-parent="909"][data-long="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="910"][data-acne="99"]:not([data-other=""]) .acne{display:none}
+.mm-med[data-parent="910"][data-acne="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="911"][data-migraine="99"]:not([data-other=""]) .migraine{display:none}
+.mm-med[data-parent="911"][data-migraine="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="912"][data-antihis="99"]:not([data-other=""]) .antihis{display:none}
+.mm-med[data-parent="912"][data-antihis="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="913"][data-fungal="99"]:not([data-other=""]) .fungal{display:none}
+.mm-med[data-parent="913"][data-fungal="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="914"][data-antiviral="99"]:not([data-other=""]) .antiviral{display:none}
+.mm-med[data-parent="914"][data-antiviral="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="915"][data-gastric="99"]:not([data-other=""]) .gastric{display:none}
+.mm-med[data-parent="915"][data-gastric="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="916"][data-thyroid="99"]:not([data-other=""]) .thyroid{display:none}
+.mm-med[data-parent="916"][data-thyroid="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="917"][data-controlled="99"]:not([data-other=""]) .controlled{display:none}
+.mm-med[data-parent="917"][data-controlled="99"]:not([data-other=""]) .other{display:inline}
+.mm-med[data-parent="919"][data-metabolic="99"]:not([data-other=""]) .metabolic{display:none}
+.mm-med[data-parent="919"][data-metabolic="99"]:not([data-other=""]) .other{display:inline}</style><b>Date:</b> <span class="misc-start" data-start="[med_misc_start]"><span class="start-date" style="color:#00B050;">[med_misc_start:year]-[med_misc_start:month]-[med_misc_start:day]</span><span class="start-blank" style="color:#000000;">(Blank)</span></span> - <span class="misc-stop" data-stop="[med_misc_stop]"><span class="stop-date" style="color:#FF0000;">[med_misc_stop:year]-[med_misc_stop:month]-[med_misc_stop:day]</span><span class="stop-blank" style="color:#000000;">(Blank)</span></span> | <span class="mm-med" data-parent="[med_misc_name:value]" data-other="[med_misc_other_name]" data-contratype="[med_misc_name_type_contra:value]" data-pill="[med_misc_type_of_pill:value]" data-long="[med_misc_type_lngact_contr:value]" data-acne="[med_misc_type_of_acne:value]" data-migraine="[med_misc_type_mig_pain:value]" data-antihis="[med_misc_type_antihis:value]" data-fungal="[med_misc_type_ant_fung:value]" data-antiviral="[med_misc_type_anti_viral:value]" data-gastric="[med_misc_type_gastr_med:value]" data-thyroid="[med_misc_type_thyroid_med:value]" data-controlled="[med_misc_type_cntrl_subst:value]" data-supplement="[med_misc_supplements:value]" data-metabolic="[med_misc_meta:value]" style="color:#0070C0;"><span class="generic">[med_misc_name]</span><span class="specific contra">[med_misc_name_type_contra]</span><span class="specific pill">[med_misc_type_of_pill]</span><span class="specific long">[med_misc_type_lngact_contr]</span><span class="specific acne">[med_misc_type_of_acne]</span><span class="specific migraine">[med_misc_type_mig_pain]</span><span class="specific antihis">[med_misc_type_antihis]</span><span class="specific fungal">[med_misc_type_ant_fung]</span><span class="specific antiviral">[med_misc_type_anti_viral]</span><span class="specific gastric">[med_misc_type_gastr_med]</span><span class="specific thyroid">[med_misc_type_thyroid_med]</span><span class="specific controlled">[med_misc_type_cntrl_subst]</span><span class="specific supplement">[med_misc_supplements]</span><span class="specific metabolic">[med_misc_meta]</span><span class="specific other">[med_misc_other_name]</span></span> | <b>Disc?</b> <span class="misc-disc" data-answer="[med_misc_disc]">[med_misc_disc]</span>
