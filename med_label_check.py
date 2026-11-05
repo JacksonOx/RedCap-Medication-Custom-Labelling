@@ -166,7 +166,7 @@ def check_dictionary(dictionary, output, installed_labels=None):
                 findings.append(f"MISSING PARENT CODE: {child['field']} references absent choice {old_code}")
         # Newly added branching subfields could introduce a medication class and
         # require label structure changes. Do not guess their meaning.
-        allowed = set(expected)
+        allowed = set(expected) | set(spec.get("contextual_fields", []))
         for name, row in by_name.items():
             if name in allowed:
                 continue
