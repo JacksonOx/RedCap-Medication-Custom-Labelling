@@ -1,0 +1,19 @@
+# Never push private REDCap files or audit outputs
+inputs/
+outputs/
+data/
+*.sqlite
+*.db
+*.log
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+# local exports by filename convention
+*DataDictionary*.csv
+*Data_Dictionary*.csv
+*ImportTemplate*.csv
+*REDCap*Export*.csv
+*Patient*_Import.csv
