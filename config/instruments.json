@@ -1,0 +1,180 @@
+{
+  "event": "patient_baseline_arm_1",
+  "archived": [
+    "meds_medication_history"
+  ],
+  "forms": {
+    "meds_abs": {
+      "prefix": "med_abs",
+      "parent": "med_abs_name",
+      "other": "med_abs_other_name",
+      "children": [],
+      "baseline_choice_hashes": {
+        "med_abs_name": "d3956aa08e88ef80"
+      }
+    },
+    "meds_nsaids": {
+      "prefix": "med_nsaids",
+      "parent": "med_nsaids_name",
+      "other": "med_nsaids_other_name",
+      "children": [],
+      "baseline_choice_hashes": {
+        "med_nsaids_name": "4841f13f829ab333"
+      }
+    },
+    "meds_steroids": {
+      "prefix": "med_steroids",
+      "parent": "med_steroids_name",
+      "other": "med_steroids_other_name",
+      "children": [],
+      "baseline_choice_hashes": {
+        "med_steroids_name": "ce0acde69e02056b"
+      }
+    },
+    "meds_dmards": {
+      "prefix": "med_dmards",
+      "parent": "med_dmards_name",
+      "other": "med_dmards_other_name",
+      "children": [
+        {
+          "field": "med_dmards_tnftype",
+          "parent_code": "506",
+          "name": "tnf",
+          "baseline_hash": "7d5b2ec2a3002e31"
+        },
+        {
+          "field": "med_dmards_jaktype",
+          "parent_code": "514",
+          "name": "jak",
+          "baseline_hash": "6f3e6545fc49d0b7"
+        }
+      ],
+      "baseline_choice_hashes": {
+        "med_dmards_name": "b3bcb4a4cfb67459"
+      }
+    },
+    "meds_psych": {
+      "prefix": "med_psych",
+      "parent": "med_psych_name",
+      "other": "med_psych_other_name",
+      "children": [
+        {
+          "field": "med_psych_methylphenidate",
+          "parent_code": "818",
+          "name": "methyl",
+          "baseline_hash": "5e3788b3492a2118"
+        },
+        {
+          "field": "med_psych_amphetamine",
+          "parent_code": "819",
+          "name": "amph",
+          "baseline_hash": "098db47ffd56dba7"
+        }
+      ],
+      "baseline_choice_hashes": {
+        "med_psych_name": "e03bfbe1f561e2bf"
+      }
+    },
+    "meds_misc": {
+      "prefix": "med_misc",
+      "parent": "med_misc_name",
+      "other": "med_misc_other_name",
+      "children": [
+        {
+          "field": "med_misc_name_type_contra",
+          "parent_code": "909",
+          "name": "contra",
+          "baseline_hash": "8dd02553fa6fead6"
+        },
+        {
+          "field": "med_misc_type_of_pill",
+          "parent_code": "909",
+          "branch_parent": "med_misc_name_type_contra",
+          "branch_code": "1",
+          "name": "pill",
+          "baseline_hash": "f26dbcca75dca55e"
+        },
+        {
+          "field": "med_misc_type_lngact_contr",
+          "parent_code": "909",
+          "branch_parent": "med_misc_name_type_contra",
+          "branch_code": "2",
+          "name": "long",
+          "baseline_hash": "3a45aa30e5c875b5"
+        },
+        {
+          "field": "med_misc_type_of_acne",
+          "parent_code": "910",
+          "name": "acne",
+          "baseline_hash": "42fb40b435fb9ce8"
+        },
+        {
+          "field": "med_misc_type_mig_pain",
+          "parent_code": "911",
+          "name": "migraine",
+          "baseline_hash": "d2fdf8a8587934aa"
+        },
+        {
+          "field": "med_misc_type_antihis",
+          "parent_code": "912",
+          "name": "antihis",
+          "baseline_hash": "b11e3544a3f25540"
+        },
+        {
+          "field": "med_misc_type_ant_fung",
+          "parent_code": "913",
+          "name": "fungal",
+          "baseline_hash": "09b750278fb71bf2"
+        },
+        {
+          "field": "med_misc_type_anti_viral",
+          "parent_code": "914",
+          "name": "antiviral",
+          "baseline_hash": "c9aa8452091f4caf"
+        },
+        {
+          "field": "med_misc_type_gastr_med",
+          "parent_code": "915",
+          "name": "gastric",
+          "baseline_hash": "43bc427e0a67e7f6"
+        },
+        {
+          "field": "med_misc_type_thyroid_med",
+          "parent_code": "916",
+          "name": "thyroid",
+          "baseline_hash": "11dcd238c969162b"
+        },
+        {
+          "field": "med_misc_type_cntrl_subst",
+          "parent_code": "917",
+          "name": "controlled",
+          "baseline_hash": "e4abb3ebe9f177cb"
+        },
+        {
+          "field": "med_misc_supplements",
+          "parent_code": "918",
+          "name": "supplement",
+          "baseline_hash": "d3a26e37dbff82a8"
+        },
+        {
+          "field": "med_misc_meta",
+          "parent_code": "919",
+          "name": "metabolic",
+          "baseline_hash": "f12ec7d15236ac11"
+        }
+      ],
+      "baseline_choice_hashes": {
+        "med_misc_name": "74ecabeab16b102e"
+      }
+    },
+    "meds_other": {
+      "prefix": "med_other",
+      "parent": "med_other_name",
+      "other": "med_other_other_name",
+      "children": [],
+      "baseline_choice_hashes": {
+        "med_other_name": null
+      }
+    }
+  }
+}
