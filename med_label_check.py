@@ -202,15 +202,15 @@ def check_dictionary(dictionary, output, installed_labels=None):
               "dictionary": Path(dictionary).name, "forms": results}
     (output / "report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     lines = ["# REDCap medication label maintenance audit", "",
-             f"Event: \`{config['event']}\`. Archived instruments excluded.",
+             f"Event: `{config['event']}`. Archived instruments excluded.",
              "", "| Instrument | Decision |", "|---|---|"]
     for form, item in results.items():
-        lines.append(f"| \`{form}\` | **{item['status']}** |")
+        lines.append(f"| `{form}` | **{item['status']}** |")
     for form, item in results.items():
         lines += ["", f"## {form}", ""]
         lines += ["- " + f for f in item["findings"]] if item["findings"] else ["- No label-relevant differences detected against stored schema checks."]
         if item["candidate_file"]:
-            lines.append(f"- Candidate complete label: \`{item['candidate_file']}\` (test before deployment).")
+            lines.append(f"- Candidate complete label: `{item['candidate_file']}` (test before deployment).")
     lines += ["", "## Limits", "",
               "- The REDCap data dictionary does not export installed repeating-instrument custom labels.",
               "- No automated changes or imports were made to REDCap.",
