@@ -1,9 +1,9 @@
 # Human acceptance checklist
 
-- [ ] Seven repeating instruments present under Patient Baseline, \`patient_baseline_arm_1\`.
-- [ ] Archived \`meds_medication_history\` ignored.
+- [ ] Seven repeating instruments present under Patient Baseline, `patient_baseline_arm_1`.
+- [ ] Archived `meds_medication_history` ignored.
 - [ ] Known dates YYYY-MM-DD; start green and stop red.
-- [ ] Missing dates display \`(Blank)\`, no unwanted fixed-width spacing.
+- [ ] Missing dates display `(Blank)`, no unwanted fixed-width spacing.
 - [ ] Drug label blue and correct specific subtype for every selected parent+child pair.
 - [ ] Stale child data does not appear for unrelated parents.
 - [ ] Missing child falls back to parent label.
