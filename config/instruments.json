@@ -29,7 +29,11 @@
       "children": [],
       "baseline_choice_hashes": {
         "med_steroids_name": "ce0acde69e02056b"
-      }
+      },
+      "contextual_fields": [
+        "med_steroids_soldose",
+        "med_steroids_course"
+      ]
     },
     "meds_dmards": {
       "prefix": "med_dmards",
@@ -51,7 +55,10 @@
       ],
       "baseline_choice_hashes": {
         "med_dmards_name": "b3bcb4a4cfb67459"
-      }
+      },
+      "contextual_fields": [
+        "med_dmards_mtx"
+      ]
     },
     "meds_psych": {
       "prefix": "med_psych",
@@ -173,8 +180,12 @@
       "other": "med_other_other_name",
       "children": [],
       "baseline_choice_hashes": {
-        "med_other_name": null
-      }
+        "med_other_name": "a9148a6ef949cdad"
+      },
+      "contextual_fields": [
+        "med_other_ivig_high_low_dose",
+        "med_other_scig_use"
+      ]
     }
   }
 }
